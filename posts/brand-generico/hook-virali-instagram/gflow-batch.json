@@ -1,0 +1,25 @@
+{
+  "post": "hook-virali-instagram",
+  "generatedAt": "2026-08-16T13:01:14.174Z",
+  "brandStyle": "minimalist dark UI tech aesthetic, deep charcoal and graphite background (#0F0F0F), vibrant neon orange accents (#FF5A36), clean 3D studio lighting, sharp focus, geometric composition, premium editorial look, high quality, no text watermark",
+  "tasks": [
+    {
+      "output": "03-immagini/slide-03.png",
+      "aspectRatio": "4:3",
+      "prompt": "Minimalist dark-mode digital graphic showing a boring vs magnetic hook comparison, neon orange accent, clean typography, high contrast, studio lighting, 3D abstract minimalist aesthetic., minimalist dark UI tech aesthetic, deep charcoal and graphite background (#0F0F0F), vibrant neon orange accents (#FF5A36), clean 3D studio lighting, sharp focus, geometric composition, premium editorial look, high quality, no text watermark",
+      "rawPrompt": "Minimalist dark-mode digital graphic showing a boring vs magnetic hook comparison, neon orange accent, clean typography, high contrast, studio lighting, 3D abstract minimalist aesthetic."
+    },
+    {
+      "output": "03-immagini/slide-04.png",
+      "aspectRatio": "4:3",
+      "prompt": "A sleek digital stopwatch or timer showing 00:03 seconds, glowing orange light beam, dark graphite background, sharp depth of field, modern tech editorial style., minimalist dark UI tech aesthetic, deep charcoal and graphite background (#0F0F0F), vibrant neon orange accents (#FF5A36), clean 3D studio lighting, sharp focus, geometric composition, premium editorial look, high quality, no text watermark",
+      "rawPrompt": "A sleek digital stopwatch or timer showing 00:03 seconds, glowing orange light beam, dark graphite background, sharp depth of field, modern tech editorial style."
+    },
+    {
+      "output": "03-immagini/slide-05.png",
+      "aspectRatio": "4:3",
+      "prompt": "A stylized glowing target with an arrow hitting the bullseye, fiery orange and deep charcoal palette, clean geometric render, premium dark UI aesthetic., minimalist dark UI tech aesthetic, deep charcoal and graphite background (#0F0F0F), vibrant neon orange accents (#FF5A36), clean 3D studio lighting, sharp focus, geometric composition, premium editorial look, high quality, no text watermark",
+      "rawPrompt": "A stylized glowing target with an arrow hitting the bullseye, fiery orange and deep charcoal palette, clean geometric render, premium dark UI aesthetic."
+    }
+  ]
+}

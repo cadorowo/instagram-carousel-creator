@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #FDFBF4;
+    color: #141414;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 78px 60px;
+  }
+  .img-frame {
+    border: 4px solid #141414;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .img-frame img {
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    display: block;
+  }
+  .body-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px;
+  }
+  .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5C5648;
+    margin-bottom: 22px;
+  }
+  .titolo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 82px;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    color: #141414;
+    margin-bottom: 26px;
+  }
+  .testo {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-wrap: balance;
+    color: #141414;
+  }
+  .testo strong {
+    font-weight: 700;
+  }
+  .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-top: 3px solid #141414;
+    padding-top: 22px;
+  }
+  .counter {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5C5648;
+  }
+  .swipe {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5C5648;
+  }
+</style>
+</head>
+<body>
+  <div class="img-frame">
+    <img src="{{IMMAGINE}}" alt="">
+  </div>
+  <div class="body-block">
+    <div class="label">{{LABEL}}</div>
+    <div class="titolo">{{TITOLO}}</div>
+    <div class="testo">{{TESTO}}</div>
+  </div>
+  <div class="footer">
+    <div class="counter">{{CONTATORE}}</div>
+    <div class="swipe">scorri &rarr;</div>
+  </div>
+</body>
+</html>

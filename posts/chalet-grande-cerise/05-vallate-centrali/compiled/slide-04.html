@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Outfit', sans-serif;
+    background: #F3E8DC;
+    color: #382A24;
+    padding: 90px 70px 70px 70px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .counter {
+    font-size: 26px;
+    font-weight: 700;
+    color: #86382C;
+    margin-bottom: 16px;
+  }
+  .header-section {
+    max-width: 900px;
+  }
+  .titolo {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: #86382C;
+    margin-bottom: 20px;
+    text-wrap: balance;
+  }
+  .sottotitolo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #382A24;
+    line-height: 1.45;
+  }
+  .capsules-row {
+    display: flex;
+    gap: 22px;
+    height: 640px;
+    width: 100%;
+  }
+  .capsule-item {
+    flex: 1;
+    height: 100%;
+    border-radius: 45px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(56, 42, 36, 0.12);
+  }
+  .capsule-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+  <div class="header-section">
+    <div class="counter">04 / 07</div>
+    <div class="titolo">3. gran paradiso & cieli limpidi.</div>
+    <div class="sottotitolo">Dalle cascate e praterie di Cogne al santuario delle stelle di Saint-Barthélemy.</div>
+  </div>
+  <div class="capsules-row">
+    <div class="capsule-item">
+      <img src="../03-immagini/real-gran-paradiso.jpg" alt="Gran Paradiso">
+    </div>
+    <div class="capsule-item">
+      <img src="../03-immagini/real-cervino.jpg" alt="Cervino da quota">
+    </div>
+    <div class="capsule-item">
+      <img src="../03-immagini/chalet-notturna.avif" alt="Cielo stellato chalet">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    background: #111410;
+  }
+  .bg-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, rgba(17, 20, 16, 0.88) 0%, rgba(17, 20, 16, 0.5) 55%, rgba(17, 20, 16, 0.1) 100%);
+  }
+  .counter {
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #E8BA3E;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #E8BA3E;
+    padding-bottom: 4px;
+    z-index: 2;
+  }
+  .content {
+    position: absolute;
+    right: 70px;
+    left: 360px;
+    top: 420px;
+    z-index: 2;
+    text-align: left;
+  }
+  .titolo {
+    font-size: 80px;
+    font-weight: 800;
+    color: #E8BA3E;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    text-wrap: balance;
+    margin-bottom: 30px;
+    text-transform: lowercase;
+  }
+  .testo {
+    font-size: 36px;
+    font-weight: 400;
+    color: #E8E4DF;
+    line-height: 1.48;
+    text-wrap: balance;
+  }
+</style>
+</head>
+<body>
+  <img class="bg-img" src="{{IMMAGINE}}" alt="">
+  <div class="overlay"></div>
+  <div class="counter">{{NUMERO_SLIDE}}</div>
+  <div class="content">
+    <div class="titolo">{{TITOLO}}</div>
+    <div class="testo">{{TESTO}}</div>
+  </div>
+</body>
+</html>

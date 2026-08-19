@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #0F0F0F;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-number {
+    position: absolute;
+    top: 64px;
+    left: 80px;
+    font-size: 28px;
+    color: #FF5A36;
+    font-weight: 800;
+  }
+  .content {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .titolo {
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    text-wrap: balance;
+  }
+  .testo {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #FFFFFF;
+  }
+  .footer-bar {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 8px;
+    background: #FF5A36;
+  }
+</style>
+</head>
+<body>
+  <div class="slide-number">{{NUMERO_SLIDE}}</div>
+  <div class="content">
+    <div class="titolo">{{TITOLO}}</div>
+    <div class="testo">{{TESTO}}</div>
+  </div>
+  <div class="footer-bar"></div>
+</body>
+</html>

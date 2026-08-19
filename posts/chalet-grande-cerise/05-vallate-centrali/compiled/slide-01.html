@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #86382C;
+    color: #F3E8DC;
+    padding: 100px 90px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .counter {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(243, 232, 220, 0.75);
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+  .titolo {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.04;
+    letter-spacing: -2.5px;
+    color: #F3E8DC;
+    text-wrap: balance;
+    margin-bottom: 36px;
+  }
+  .sottotitolo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.48;
+    color: rgba(243, 232, 220, 0.9);
+    max-width: 780px;
+    text-wrap: balance;
+  }
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid rgba(243, 232, 220, 0.2);
+    padding-top: 30px;
+  }
+  .brand-logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+  }
+  .swipe-tag {
+    font-size: 28px;
+    font-weight: 600;
+    color: #F3E8DC;
+  }
+</style>
+</head>
+<body>
+  <div class="top-section">
+    <div class="counter">01 / 07</div>
+    <div class="titolo">esplorare le vallate centrali.</div>
+    <div class="sottotitolo">Il cuore più autentico della Valle d'Aosta e il tuo rifugio privato a 1500m.</div>
+  </div>
+  <div class="bottom-row">
+    <img class="brand-logo-img" src="../03-immagini/logo-grande-cerise.png" alt="Chalet Grande Cerise">
+    <div class="swipe-tag">scorri &rarr;</div>
+  </div>
+</body>
+</html>

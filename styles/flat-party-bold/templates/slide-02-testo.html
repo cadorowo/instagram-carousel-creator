@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #FDFBF4;
+    color: #141414;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 78px 60px;
+  }
+  .card {
+    flex: 1;
+    border: 4px solid #141414;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 58px;
+  }
+  .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5C5648;
+    border-bottom: 2px solid #DED7C6;
+    padding-bottom: 18px;
+    margin-bottom: 40px;
+  }
+  .titolo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 92px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    color: #141414;
+    margin-bottom: 36px;
+  }
+  .testo {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-wrap: balance;
+    color: #141414;
+  }
+  .testo strong {
+    font-weight: 700;
+  }
+  .annotazione {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 1.3;
+    color: #FD6C12;
+    margin-top: auto;
+    padding-top: 44px;
+    text-wrap: balance;
+  }
+  .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 28px;
+  }
+  .counter {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5C5648;
+  }
+  .swipe {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5C5648;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="label">{{LABEL}}</div>
+    <div class="titolo">{{TITOLO}}</div>
+    <div class="testo">{{TESTO}}</div>
+    <div class="annotazione">{{ANNOTAZIONE}}</div>
+  </div>
+  <div class="footer">
+    <div class="counter">{{CONTATORE}}</div>
+    <div class="swipe">scorri &rarr;</div>
+  </div>
+</body>
+</html>

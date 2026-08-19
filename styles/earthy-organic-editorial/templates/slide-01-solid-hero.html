@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #8C5946;
+    color: #F0ECE1;
+    padding: 100px 90px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .counter {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(240, 236, 225, 0.7);
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+  .titolo {
+    font-size: 104px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -2.5px;
+    color: #F0ECE1;
+    text-wrap: balance;
+    margin-bottom: 40px;
+  }
+  .sottotitolo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: rgba(240, 236, 225, 0.88);
+    max-width: 750px;
+    text-wrap: balance;
+  }
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .brand-name {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #F0ECE1;
+  }
+  .icon-glyph {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #F0ECE1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #F0ECE1;
+  }
+</style>
+</head>
+<body>
+  <div class="top-section">
+    <div class="counter">{{COUNTER}}</div>
+    <div class="titolo">{{TITOLO}}</div>
+    <div class="sottotitolo">{{SOTTOTITOLO}}</div>
+  </div>
+  <div class="bottom-row">
+    <div class="brand-name">{{BRAND_NAME}}</div>
+    <div class="icon-glyph">✦</div>
+  </div>
+</body>
+</html>

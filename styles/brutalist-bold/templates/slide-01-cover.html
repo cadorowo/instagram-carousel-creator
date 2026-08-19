@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Space+Mono:wght@700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #F3F3F3;
+    color: #0A0A0A;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 12px solid #0A0A0A;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #0A0A0A;
+    padding-bottom: 24px;
+  }
+  .tag {
+    background: #E8FE46;
+    color: #0A0A0A;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border: 3px solid #0A0A0A;
+    box-shadow: 4px 4px 0px #0A0A0A;
+    text-transform: uppercase;
+  }
+  .counter {
+    font-family: 'Space Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .titolo {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin: 40px 0;
+  }
+  .highlight {
+    background: #0A0A0A;
+    color: #E8FE46;
+    padding: 0 12px;
+    display: inline-block;
+  }
+  .image-container {
+    width: 100%;
+    height: 480px;
+    border: 4px solid #0A0A0A;
+    box-shadow: 10px 10px 0px #0A0A0A;
+    overflow: hidden;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #0A0A0A;
+    padding-top: 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="tag">{{TAG_CATEGORY}}</div>
+    <div class="counter">01 / 05</div>
+  </div>
+  <div class="titolo">
+    {{TITOLO_RIGA_1}}<br>
+    <span class="highlight">{{TITOLO_EVIDENZIATO}}</span>
+  </div>
+  <div class="image-container">
+    <img src="{{IMMAGINE}}" alt="">
+  </div>
+  <div class="footer">
+    <div>{{BRAND_HANDLE}}</div>
+    <div>SCORRI &rarr;</div>
+  </div>
+</body>
+</html>

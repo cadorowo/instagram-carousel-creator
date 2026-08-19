@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #382A24;
+    position: relative;
+    overflow: hidden;
+    background: #F3E8DC;
+  }
+  .bg-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(243, 232, 220, 0.95) 0%, rgba(243, 232, 220, 0.76) 48%, rgba(243, 232, 220, 0.28) 100%);
+  }
+  .counter {
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #86382C;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #86382C;
+    padding-bottom: 4px;
+    z-index: 2;
+  }
+  .content {
+    position: absolute;
+    left: 70px;
+    right: 240px;
+    top: 240px;
+    z-index: 2;
+  }
+  .titolo {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: #86382C;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    text-wrap: balance;
+    margin-bottom: 28px;
+    text-transform: lowercase;
+  }
+  .testo {
+    font-size: 36px;
+    font-weight: 500;
+    color: #382A24;
+    line-height: 1.45;
+    text-wrap: balance;
+  }
+  .logo-badge {
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    z-index: 2;
+  }
+  .logo-img {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+  }
+  .swipe-hint {
+    position: absolute;
+    bottom: 65px;
+    right: 70px;
+    font-size: 30px;
+    color: #86382C;
+    font-weight: 700;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+  <img class="bg-img" src="../03-immagini/chalet-grande-cerise-tramonto.avif" alt="Tramonto reale Chalet Grande Cerise">
+  <div class="overlay"></div>
+  <div class="counter">01</div>
+  <div class="content">
+    <div class="titolo">una giornata tipo a 1500m.</div>
+    <div class="testo">Cosa significa svegliarsi nel silenzio delle Alpi allo Chalet Grande Cerise.</div>
+  </div>
+  <div class="logo-badge">
+    <img class="logo-img" src="../03-immagini/logo-grande-cerise.png" alt="Logo Chalet Grande Cerise">
+  </div>
+  <div class="swipe-hint">scorri &rarr;</div>
+</body>
+</html>

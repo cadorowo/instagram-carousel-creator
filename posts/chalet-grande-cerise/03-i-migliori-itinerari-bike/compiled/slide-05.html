@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #EFE3D3;
+    color: #382A24;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Header / Meta */
+  .grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(134, 56, 44, 0.2);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  .grid-title-tag {
+    font-size: 24px;
+    font-weight: 700;
+    color: #86382C;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .grid-counter {
+    font-size: 26px;
+    font-weight: 700;
+    color: #86382C;
+  }
+
+  /* 3x3 Grid Layout */
+  .moodboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 1080px;
+  }
+
+  .grid-cell {
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(56, 42, 36, 0.08);
+  }
+
+  /* Variant: Solid Terracotta with Text */
+  .cell-terracotta {
+    background: #86382C;
+    color: #F3E8DC;
+    padding: 26px;
+    justify-content: space-between;
+  }
+  .cell-terracotta .cell-head {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .cell-terracotta .cell-sub {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.9;
+    line-height: 1.35;
+  }
+
+  /* Variant: Rich Cream Card with Inner Photo */
+  .cell-cream-card {
+    background: #F3E8DC;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cell-cream-card .card-head {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #86382C;
+    line-height: 1.15;
+  }
+  .cell-cream-card .inner-thumb {
+    width: 100%;
+    height: 150px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .cell-cream-card .inner-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Variant: Photo Framed with Rounded Inset */
+  .cell-framed-photo {
+    background: #86382C;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cell-framed-photo .inner-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .cell-framed-photo .inner-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Variant: Full Edge Photo */
+  .cell-full-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Variant: Photo with Quote/Text Overlay */
+  .cell-photo-text-overlay {
+    position: relative;
+  }
+  .cell-photo-text-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cell-photo-text-overlay .overlay-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(134, 56, 44, 0.7) 0%, rgba(134, 56, 44, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .cell-photo-text-overlay .overlay-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #F3E8DC;
+    line-height: 1.15;
+  }
+
+  /* Variant: Triple Mini Thumbs */
+  .cell-multi-thumbs {
+    background: #F3E8DC;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cell-multi-thumbs .multi-head {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #86382C;
+    line-height: 1.15;
+  }
+  .cell-multi-thumbs .thumbs-row {
+    display: flex;
+    gap: 8px;
+    height: 140px;
+    margin-top: 10px;
+  }
+  .cell-multi-thumbs .thumbs-row img {
+    flex: 1;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+
+  /* Variant: Muted Warm Wood Card */
+  .cell-wood-card {
+    background: #382A24;
+    color: #F3E8DC;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cell-wood-card .icon-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 14px;
+  }
+  .cell-wood-card .wood-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #F3E8DC;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Footer bar */
+  .grid-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(134, 56, 44, 0.2);
+    padding-top: 16px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #86382C;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="grid-header">
+    <div class="grid-title-tag">Esperienza • Outdoor & Chalet</div>
+    <div class="grid-counter">05 / 07</div>
+  </div>
+
+  <!-- 3x3 Moodboard Grid -->
+  <div class="moodboard-grid">
+    
+    <!-- Row 1, Col 1: Solid Terracotta Hero Block -->
+    <div class="grid-cell cell-terracotta">
+      <div class="cell-head">La Giornata Perfetta + Pila</div>
+      <div class="cell-sub">Dall'adrenalina in quota al silenzio del legno.</div>
+    </div>
+
+    <!-- Row 1, Col 2: Full Trail Photo -->
+    <div class="grid-cell cell-full-photo">
+      <img src="../03-immagini/slide-01.jpg" alt="Trail in quota">
+    </div>
+
+    <!-- Row 1, Col 3: Framed Card on Cream -->
+    <div class="grid-cell cell-cream-card">
+      <div class="card-head">Vista Vallata</div>
+      <div class="inner-thumb">
+        <img src="../03-immagini/social-preview.jpg" alt="Vista dalla terrazza">
+      </div>
+    </div>
+
+    <!-- Row 2, Col 1: Cream Text Block with Mini Inset -->
+    <div class="grid-cell cell-cream-card">
+      <div class="card-head">Il Fuoco del Camino</div>
+      <div class="inner-thumb">
+        <img src="../03-immagini/salotto-interno.jpeg" alt="Camino salotto">
+      </div>
+    </div>
+
+    <!-- Row 2, Col 2: Inset Framed Photo with Terracotta Border -->
+    <div class="grid-cell cell-framed-photo">
+      <div class="inner-photo">
+        <img src="../03-immagini/camera-patronale.jpeg" alt="Camera patronale">
+      </div>
+    </div>
+
+    <!-- Row 2, Col 3: Multi Mini Thumbs Row -->
+    <div class="grid-cell cell-multi-thumbs">
+      <div class="multi-head">Sapori & Dettagli</div>
+      <div class="thumbs-row">
+        <img src="../03-immagini/cucina.jpeg" alt="Cucina">
+        <img src="../03-immagini/salotto-interno.jpeg" alt="Living">
+      </div>
+    </div>
+
+    <!-- Row 3, Col 1: Framed Corner Space -->
+    <div class="grid-cell cell-framed-photo">
+      <div class="inner-photo">
+        <img src="../03-immagini/chalet-grande-cerise-tramonto.avif" alt="Tramonto esterno">
+      </div>
+    </div>
+
+    <!-- Row 3, Col 2: Sky/Nature with Text Scrim Overlay -->
+    <div class="grid-cell cell-photo-text-overlay">
+      <img src="../03-immagini/chalet-grande-cerise-notturna-neve.avif" alt="Notte stellata">
+      <div class="overlay-scrim">
+        <div class="overlay-text">Sotto le Stelle a 1500m</div>
+      </div>
+    </div>
+
+    <!-- Row 3, Col 3: Brand Logo & Details Card -->
+    <div class="grid-cell cell-wood-card">
+      <img class="icon-logo" src="../03-immagini/logo-grande-cerise.png" alt="Chalet Grande Cerise">
+      <div class="wood-text">chaletgrandecerise.it</div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="grid-footer">
+    <div>Chalet Grande Cerise • Valle d'Aosta</div>
+    <div>scopri di più &rarr;</div>
+  </div>
+
+</body>
+</html>

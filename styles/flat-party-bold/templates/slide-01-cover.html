@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #FFD400;
+    color: #141414;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 78px 60px;
+  }
+  .counter {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-bottom: 4px solid #141414;
+    padding-bottom: 14px;
+    align-self: flex-start;
+  }
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titolo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 106px;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    color: #141414;
+    max-width: 920px;
+  }
+  .annotazione {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 1.3;
+    color: #FD6C12;
+    margin-top: 36px;
+    text-wrap: balance;
+    max-width: 880px;
+  }
+  .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-top: 4px solid #141414;
+    padding-top: 24px;
+  }
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: -0.02em;
+    color: #141414;
+  }
+  .swipe {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #141414;
+  }
+</style>
+</head>
+<body>
+  <div class="counter">{{CONTATORE}}</div>
+  <div class="main">
+    <div class="titolo">{{TITOLO}}</div>
+    <div class="annotazione">{{ANNOTAZIONE}}</div>
+  </div>
+  <div class="footer">
+    <div class="brand">{{NOME_BRAND}}</div>
+    <div class="swipe">scorri &rarr;</div>
+  </div>
+</body>
+</html>

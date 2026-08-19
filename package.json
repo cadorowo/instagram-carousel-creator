@@ -1,0 +1,22 @@
+{
+  "name": "instagram-carousel-creator",
+  "version": "1.0.0",
+  "description": "Workflow automatico e modulare per la creazione di caroselli Instagram",
+  "main": "render.js",
+  "scripts": {
+    "render": "node render.js",
+    "render:esempio": "node render.js posts/esempio-post/compiled posts/esempio-post/output",
+    "generate:assets": "node scripts/gflow-adapter.js"
+  },
+  "keywords": [
+    "instagram",
+    "carousel",
+    "playwright",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

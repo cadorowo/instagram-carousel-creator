@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    background: #2E382A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 100px;
+  }
+  .arch-container {
+    width: 170px;
+    height: 250px;
+    border: 3px solid #E8BA3E;
+    border-radius: 90px 90px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    position: relative;
+    margin-bottom: 36px;
+  }
+  .arch-lamp {
+    position: absolute;
+    top: 24px;
+    width: 14px;
+    height: 14px;
+    background: #E8BA3E;
+    border-radius: 50%;
+  }
+  .arch-lamp::after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 6px;
+    width: 2px;
+    height: 24px;
+    background: #E8BA3E;
+  }
+  .arch-plant svg {
+    fill: #E8BA3E;
+    width: 60px;
+    height: 75px;
+  }
+  .brand-name {
+    font-size: 72px;
+    font-weight: 800;
+    color: #E8BA3E;
+    line-height: 1.05;
+    margin-bottom: 28px;
+    letter-spacing: -1px;
+  }
+  .tagline {
+    font-size: 34px;
+    font-weight: 600;
+    color: #E8BA3E;
+    letter-spacing: 0.5px;
+    margin-bottom: 70px;
+    text-transform: lowercase;
+  }
+  .cta-box {
+    font-size: 36px;
+    font-weight: 400;
+    color: #E8E4DF;
+    line-height: 1.5;
+    max-width: 680px;
+    text-wrap: balance;
+  }
+</style>
+</head>
+<body>
+  <div class="arch-container">
+    <div class="arch-lamp"></div>
+    <div class="arch-plant">
+      <svg viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2ZM12 9C15.31 9 18 11.69 18 15V22H6V15C6 11.69 8.69 9 12 9Z"/></svg>
+    </div>
+  </div>
+  <div class="brand-name">{{NOME_BRAND}}</div>
+  <div class="tagline">{{TAGLINE}}</div>
+  <div class="cta-box">{{CTA_TESTO}}</div>
+</body>
+</html>
