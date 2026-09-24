@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 *.log
+
+# Rendered output carousels (build artifacts)
+posts/**/output/
+output/
+
+# Scraped web bundles
+brand/chalet-site.*

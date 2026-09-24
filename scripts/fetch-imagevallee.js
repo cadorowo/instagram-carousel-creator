@@ -171,7 +171,7 @@ async function main() {
     console.log(`⬇️ Scaricando [${photo.id}]: "${photo.title}" -> ${fileName}`);
     try {
       await downloadImage(photo.url, destPath);
-      downloaded.push({ id: photo.id, title: photo.title, file: fileName, path: destPath });
+      downloaded.push({ id: photo.id, title: photo.title, file: fileName, path: path.relative(process.cwd(), destPath) });
     } catch (err) {
       console.error(`❌ Errore scaricamento ${photo.id}:`, err.message);
     }

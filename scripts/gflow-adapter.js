@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const GFLOW_PROJECT_ID = "12cbd3fb-8702-4bde-97f6-7b7f9e56877b";
+const GFLOW_PROJECT_ID = process.env.GFLOW_PROJECT_ID || "";
 const BRAND_STYLE_SIGNATURE = 
   "minimalist dark UI tech aesthetic, deep charcoal and graphite background (#0F0F0F), vibrant neon orange accents (#FF5A36), clean 3D studio lighting, sharp focus, geometric composition, premium editorial look, high quality, no text watermark";
 
