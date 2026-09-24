@@ -8,3 +8,11 @@ output/
 
 # Scraped web bundles
 brand/chalet-site.*
+
+# Proprietary client brands and custom posts
+brand/chalet/
+brand/assets/
+brands/chalet*
+brands/twist-it*
+posts/chalet*
+posts/twist-it*
